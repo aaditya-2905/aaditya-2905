@@ -67,7 +67,7 @@
 
 ## 🐍 Contribution Snake
 
-![snake gif](https://github.com/aaditya-2905/aaditya-2905/blob/output/github-contribution-grid-snake.svg)
+![snake gif](https://raw.githubusercontent.com/aaditya-2905/aaditya-2905/output/github-contribution-grid-snake.svg)
 
 ---
 
