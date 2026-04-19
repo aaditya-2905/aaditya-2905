@@ -65,12 +65,6 @@
 
 ---
 
-## 🐍 Contribution Snake
-
-![snake gif](https://raw.githubusercontent.com/aaditya-2905/aaditya-2905/output/github-contribution-grid-snake.svg)
-
----
-
 ## 🌐 Connect With Me
 
 * 💼 LinkedIn: linkedin.com/in/aadityasinh-zala
