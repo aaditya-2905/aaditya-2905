@@ -67,7 +67,7 @@
 
 ## 🌐 Connect With Me
 
-* 💼 LinkedIn: linkedin.com/in/aadityasinh-zala
+* 💼 LinkedIn: [aadityasinh-zala](https://linkedin.com/in/aadityasinh-zala)
 
 ---
 
