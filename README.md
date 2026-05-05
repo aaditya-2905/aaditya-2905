@@ -2,7 +2,7 @@
 
 ###  Building scalable systems with automation-first mindset
 
-![Typing SVG](https://readme-typing-svg.herokuapp.com?color=00F7FF\&center=true\&vCenter=true\&lines=DevOps+Engineer;Automation+Enthusiast;CI/CD+Builder;Cloud+Learner)
+![Typing SVG](https://readme-typing-svg.herokuapp.com?color=00F7FF\&center=true\&vCenter=true\&lines=DevOps+Engineer;CI/CD+Builder;Cloud+Architect)
 
 ---
 
@@ -10,8 +10,7 @@
 
 * 💻 DevOps enthusiast focused on real-world infrastructure
 * ⚙️ Building scalable systems using automation & CI/CD
-* 🚀 Strong interest in cloud + system design
-* ⚡ I believe: *"If it can be automated, it should be automated"*
+* 🚀 Strong interest in cloud and infra design
 
 ---
 
