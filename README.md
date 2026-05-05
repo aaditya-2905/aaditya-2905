@@ -1,6 +1,6 @@
 # Hiii, I'm Aadityasinh Zala
 
-###  Building scalable systems with automation-first mindset
+###  Building scalable systems on Cloud☁️
 
 ![Typing SVG](https://readme-typing-svg.herokuapp.com?color=00F7FF\&center=true\&vCenter=true\&lines=DevOps+Engineer;CI/CD+Builder;Cloud+Architect)
 
