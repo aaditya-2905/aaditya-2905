@@ -2,7 +2,7 @@
 
 <p align="center">
   <a href="https://github.com/aaditya-2905">
-    <img src="https://readme-typing-svg.herokuapp.com?font=Fira+Code&weight=600&size=22&pause=1000&color=00F7FF&center=true&vCenter=true&random=false&width=600&lines=DevOps+Engineer+%F0%9F%9B%A0%EF%B8%8F;CI%2FCD+Pipeline+Architect+%F0%9F%94%84;Cloud+Infrastructure+Builder+%E2%98%81%EF%B8%8F;Kubernetes+%7C+Docker+%7C+Terraform+%F0%9F%9A%80" alt="Typing SVG" />
+    <img src="https://readme-typing-svg.herokuapp.com?font=Fira+Code&weight=600&size=22&pause=1000&color=00F7FF&center=true&vCenter=true&random=false&width=600&lines=DevOps+Engineer+%F0%9F%9B%A0%EF%B8%8F;CI%2FCD+Pipeline+Architect+%F0%9F%94%84;Cloud+Infrastructure+Builder+%E2%98%81%EF%B8%8F;AWS+%7C+Kubernetes+%7C+Docker+%7C+Terraform+%F0%9F%9A%80" alt="Typing SVG" />
   </a>
 </p>
 
@@ -59,7 +59,7 @@
 
 ---
 
-### 🔹 Multi-Region Infrastructure
+### 🔹 Multi-Region cross-failover Infrastructure
 
 * Designed multi-region infra using Terraform wrappers
 * Implemented CI/CD with job separation strategy
