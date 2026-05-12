@@ -78,8 +78,12 @@
 ## 📊 GitHub Stats
 
 <p align="center">
-  <img src="https://github-readme-stats.vercel.app/api?username=aaditya-2905&show_icons=true&theme=tokyonight&hide_border=true&bg_color=0d1117" alt="Aaditya's GitHub stats" width="48%" />
-  <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=aaditya-2905&layout=compact&theme=tokyonight&hide_border=true&bg_color=0d1117" alt="Top Languages" width="40%" />
+  <img src="https://github-profile-summary-cards.vercel.app/api/cards/stats?username=aaditya-2905&theme=tokyonight" alt="Aaditya's GitHub stats" width="48%" />
+  <img src="https://github-profile-summary-cards.vercel.app/api/cards/repos-per-language?username=aaditya-2905&theme=tokyonight" alt="Top Languages" width="48%" />
+</p>
+
+<p align="center">
+  <img src="https://github-profile-summary-cards.vercel.app/api/cards/profile-details?username=aaditya-2905&theme=tokyonight" alt="Profile Details" width="98%" />
 </p>
 
 <p align="center">
