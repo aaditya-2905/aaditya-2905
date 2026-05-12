@@ -50,7 +50,7 @@
 | 🐳 **Containerization** | Docker | Multi-stage Dockerfiles for frontend & backend with optimized image sizes |
 | 🔄 **CI/CD** | Jenkins | Automated build → test → push → deploy pipeline via Jenkinsfile |
 | ☸️ **Orchestration** | Kubernetes | Deployment manifests, services & ingress for rolling updates on AWS EKS |
-| 🏗️ **IaC** | Terraform | Infrastructure provisioned as code — VPC, subnets, EKS cluster, RDS |
+| 🏗️ **IaC** | Terraform | Infrastructure provisioned as code — VPC, subnets, EKS cluster |
 | 📦 **Config Mgmt** | Ansible | Playbooks for server bootstrapping & environment configuration |
 | ☁️ **Cloud** | AWS | S3 + CloudFront (frontend), EKS (backend), RDS (MongoDB Atlas) |
 | 📊 **Monitoring** | CloudWatch | Logs, metrics & alarms for infra and application health |
