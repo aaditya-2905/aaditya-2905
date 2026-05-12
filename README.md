@@ -53,7 +53,7 @@
 | 🏗️ **IaC** | Terraform | Infrastructure provisioned as code — VPC, subnets, EKS cluster |
 | 📦 **Config Mgmt** | Ansible | Playbooks for server bootstrapping & environment configuration |
 | ☁️ **Cloud** | AWS | S3 + CloudFront (frontend), EKS (backend), RDS (MongoDB Atlas) |
-| 📊 **Monitoring** | CloudWatch | Logs, metrics & alarms for infra and application health |
+| 📊 **Monitoring** | Prometheus, Loki, Grafana, OpenTelemetry | Logs, Traces, Metrics & Alarms for infra and application health |
 
 </details>
 
