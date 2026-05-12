@@ -47,12 +47,12 @@
 
 | Layer | Tool / Tech | Details |
 |-------|------------|----------|
-| 🐳 **Containerization** | Docker | Multi-stage Dockerfiles for frontend & backend with optimized image sizes |
+| 🐳 **Containerization** | Docker, Docker Compose | Multi-stage Dockerfiles for frontend & backend with docker compose, optimized image sizes & Enhanced security|
 | 🔄 **CI/CD** | Jenkins | Automated build → test → push → deploy pipeline via Jenkinsfile |
 | ☸️ **Orchestration** | Kubernetes | Deployment manifests, services & ingress for rolling updates on AWS EKS |
 | 🏗️ **IaC** | Terraform | Infrastructure provisioned as code — VPC, subnets, EKS cluster |
 | 📦 **Config Mgmt** | Ansible | Playbooks for server bootstrapping & environment configuration |
-| ☁️ **Cloud** | AWS | S3 + CloudFront (frontend), EKS (backend), RDS (MongoDB Atlas) |
+| ☁️ **Cloud** | AWS | S3 + CloudFront (frontend), EKS (backend) |
 | 📊 **Monitoring** | Prometheus, Loki, Grafana, OpenTelemetry | Logs, Traces, Metrics & Alarms for infra and application health |
 
 </details>
