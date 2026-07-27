@@ -1,34 +1,51 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 340" width="1200" height="340" role="img" aria-label="Aadityasinh Zala, DevOps and Cloud Infrastructure Engineer. Illustration of a developer sitting on a cloud with a laptop, above a cloud layer at dawn.">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 360" width="1200" height="360" role="img" aria-label="Aadityasinh Zala, DevOps and Cloud Infrastructure Engineer. Illustration of a developer in headphones sitting on a cloud with a glowing laptop, above a cloud layer at dawn.">
   <title>Aadityasinh Zala — DevOps · Cloud · SRE</title>
 
   <defs>
     <linearGradient id="sky" x1="0" y1="0" x2="0" y2="1">
-      <stop offset="0%"   stop-color="#070b14"/>
-      <stop offset="42%"  stop-color="#0f1729"/>
-      <stop offset="76%"  stop-color="#1c2542"/>
-      <stop offset="100%" stop-color="#2c3862"/>
+      <stop offset="0%"   stop-color="#060a12"/>
+      <stop offset="38%"  stop-color="#0e1627"/>
+      <stop offset="72%"  stop-color="#1b2440"/>
+      <stop offset="100%" stop-color="#2e3a66"/>
     </linearGradient>
 
-    <radialGradient id="dawn" cx="0.26" cy="1.02" r="0.8">
-      <stop offset="0%"   stop-color="#ff9a62" stop-opacity="0.5"/>
-      <stop offset="42%"  stop-color="#ff7e4d" stop-opacity="0.16"/>
+    <radialGradient id="dawn" cx="0.24" cy="1.02" r="0.82">
+      <stop offset="0%"   stop-color="#ff9a62" stop-opacity="0.52"/>
+      <stop offset="40%"  stop-color="#ff7e4d" stop-opacity="0.17"/>
       <stop offset="100%" stop-color="#ff7e4d" stop-opacity="0"/>
     </radialGradient>
 
+    <radialGradient id="aurora" cx="0.62" cy="0.1" r="0.6">
+      <stop offset="0%"   stop-color="#5ec8f5" stop-opacity="0.13"/>
+      <stop offset="100%" stop-color="#5ec8f5" stop-opacity="0"/>
+    </radialGradient>
+
     <radialGradient id="screenGlow" cx="0.5" cy="0.5" r="0.5">
-      <stop offset="0%"   stop-color="#ffd68a" stop-opacity="0.85"/>
-      <stop offset="45%"  stop-color="#fbbf24" stop-opacity="0.28"/>
+      <stop offset="0%"   stop-color="#ffe0a3" stop-opacity="0.9"/>
+      <stop offset="42%"  stop-color="#fbbf24" stop-opacity="0.3"/>
       <stop offset="100%" stop-color="#fbbf24" stop-opacity="0"/>
     </radialGradient>
 
-    <filter id="soften" x="-40%" y="-40%" width="180%" height="180%">
-      <feGaussianBlur stdDeviation="7"/>
+    <!-- light thrown from the screen onto the face and chest -->
+    <linearGradient id="cone" gradientUnits="userSpaceOnUse" x1="126" y1="80" x2="74" y2="80">
+      <stop offset="0%"   stop-color="#ffd68a" stop-opacity="0.42"/>
+      <stop offset="60%"  stop-color="#ffd68a" stop-opacity="0.12"/>
+      <stop offset="100%" stop-color="#ffd68a" stop-opacity="0"/>
+    </linearGradient>
+
+    <filter id="soften" x="-45%" y="-45%" width="190%" height="190%">
+      <feGaussianBlur stdDeviation="9"/>
+    </filter>
+    <filter id="haze" x="-40%" y="-40%" width="180%" height="180%">
+      <feGaussianBlur stdDeviation="11"/>
     </filter>
     <filter id="glowSm" x="-70%" y="-70%" width="240%" height="240%">
-      <feGaussianBlur stdDeviation="2.4"/>
+      <feGaussianBlur stdDeviation="2.6"/>
+    </filter>
+    <filter id="coneBlur" x="-40%" y="-40%" width="180%" height="180%">
+      <feGaussianBlur stdDeviation="8"/>
     </filter>
 
-    <!-- reusable cloud silhouettes -->
     <g id="cloudA">
       <circle cx="42"  cy="44" r="26"/>
       <circle cx="84"  cy="30" r="34"/>
@@ -42,14 +59,17 @@
       <circle cx="92" cy="32" r="18"/>
       <rect x="12" y="32" width="96" height="18" rx="9"/>
     </g>
+
     <style>
-      @keyframes bob    { 0%,100%{transform:translateY(0)}     50%{transform:translateY(-5px)} }
-      @keyframes bobSlow{ 0%,100%{transform:translateY(0)}     50%{transform:translateY(-8px)} }
-      @keyframes drift  { from{transform:translateX(-70px)}    to{transform:translateX(1290px)} }
-      @keyframes twinkle{ 0%,100%{opacity:.15}                 50%{opacity:.95} }
-      @keyframes pulse  { 0%,100%{opacity:.55; transform:scale(.96)} 50%{opacity:1; transform:scale(1.06)} }
-      @keyframes flow   { from{stroke-dashoffset:44}           to{stroke-dashoffset:0} }
-      @keyframes beat   { 0%,100%{opacity:.35}                 50%{opacity:1} }
+      @keyframes bob    { 0%,100%{transform:translateY(0)}  50%{transform:translateY(-5px)} }
+      @keyframes bobSlow{ 0%,100%{transform:translateY(0)}  50%{transform:translateY(-9px)} }
+      @keyframes drift  { from{transform:translateX(-80px)} to{transform:translateX(1300px)} }
+      @keyframes twinkle{ 0%,100%{opacity:.14}              50%{opacity:.95} }
+      @keyframes pulse  { 0%,100%{opacity:.6; transform:scale(.95)} 50%{opacity:1; transform:scale(1.07)} }
+      @keyframes flow   { from{stroke-dashoffset:44}        to{stroke-dashoffset:0} }
+      @keyframes beat   { 0%,100%{opacity:.35}              50%{opacity:1} }
+      @keyframes steam  { 0%{opacity:0; transform:translateY(3px)} 35%{opacity:.55} 100%{opacity:0; transform:translateY(-13px)} }
+      @keyframes mote   { 0%,100%{opacity:.15; transform:translateY(2px)} 50%{opacity:.8; transform:translateY(-6px)} }
 
       .bob     { animation: bob 6s ease-in-out infinite; }
       .bob-s   { animation: bobSlow 9s ease-in-out infinite; }
@@ -57,92 +77,130 @@
       .glow    { animation: pulse 3.4s ease-in-out infinite; transform-box: fill-box; transform-origin: center; }
       .wire    { animation: flow 2.2s linear infinite; }
       .beat    { animation: beat 2s ease-in-out infinite; }
-      .drift-1 { animation: drift 46s linear infinite; }
-      .drift-2 { animation: drift 68s linear infinite; }
-      .drift-3 { animation: drift 92s linear infinite; }
+      .steam   { animation: steam 3.6s ease-in-out infinite; transform-box: fill-box; }
+      .mote    { animation: mote 5s ease-in-out infinite; transform-box: fill-box; }
+      .drift-1 { animation: drift 48s linear infinite; }
+      .drift-2 { animation: drift 70s linear infinite; }
+      .drift-3 { animation: drift 96s linear infinite; }
     </style>
   </defs>
 
   <!-- ─── sky ─────────────────────────────────────────────── -->
-  <rect width="1200" height="340" fill="url(#sky)"/>
-  <rect width="1200" height="340" fill="url(#dawn)"/>
+  <rect width="1200" height="360" fill="url(#sky)"/>
+  <rect width="1200" height="360" fill="url(#aurora)"/>
+  <rect width="1200" height="360" fill="url(#dawn)"/>
 
   <!-- ─── stars ───────────────────────────────────────────── -->
   <g fill="#dce6ff">
-    <circle class="star" cx="88"   cy="42"  r="1.5" style="animation-delay:0s"/>
-    <circle class="star" cx="176"  cy="86"  r="1"   style="animation-delay:1.4s"/>
-    <circle class="star" cx="262"  cy="34"  r="1.7" style="animation-delay:2.6s"/>
-    <circle class="star" cx="352"  cy="66"  r="1.1" style="animation-delay:.7s"/>
-    <circle class="star" cx="444"  cy="30"  r="1.4" style="animation-delay:3.1s"/>
-    <circle class="star" cx="520"  cy="94"  r="1"   style="animation-delay:1.9s"/>
-    <circle class="star" cx="596"  cy="46"  r="1.6" style="animation-delay:.3s"/>
-    <circle class="star" cx="684"  cy="28"  r="1.1" style="animation-delay:2.2s"/>
-    <circle class="star" cx="772"  cy="72"  r="1.3" style="animation-delay:3.6s"/>
-    <circle class="star" cx="858"  cy="38"  r="1"   style="animation-delay:1.1s"/>
-    <circle class="star" cx="944"  cy="88"  r="1.5" style="animation-delay:2.9s"/>
-    <circle class="star" cx="1032" cy="34"  r="1.2" style="animation-delay:.5s"/>
-    <circle class="star" cx="1108" cy="70"  r="1.6" style="animation-delay:3.9s"/>
-    <circle class="star" cx="1160" cy="26"  r="1"   style="animation-delay:1.7s"/>
-    <circle class="star" cx="132"  cy="118" r="1"   style="animation-delay:2.4s"/>
-    <circle class="star" cx="640"  cy="112" r="1"   style="animation-delay:4.2s"/>
+    <circle class="star" cx="74"   cy="40"  r="1.5" style="animation-delay:0s"/>
+    <circle class="star" cx="158"  cy="88"  r="1"   style="animation-delay:1.4s"/>
+    <circle class="star" cx="246"  cy="32"  r="1.7" style="animation-delay:2.6s"/>
+    <circle class="star" cx="330"  cy="62"  r="1.1" style="animation-delay:.7s"/>
+    <circle class="star" cx="424"  cy="28"  r="1.4" style="animation-delay:3.1s"/>
+    <circle class="star" cx="498"  cy="92"  r="1"   style="animation-delay:1.9s"/>
+    <circle class="star" cx="566"  cy="44"  r="1.6" style="animation-delay:.3s"/>
+    <circle class="star" cx="662"  cy="26"  r="1.1" style="animation-delay:2.2s"/>
+    <circle class="star" cx="748"  cy="70"  r="1.3" style="animation-delay:3.6s"/>
+    <circle class="star" cx="836"  cy="36"  r="1"   style="animation-delay:1.1s"/>
+    <circle class="star" cx="922"  cy="86"  r="1.5" style="animation-delay:2.9s"/>
+    <circle class="star" cx="1014" cy="32"  r="1.2" style="animation-delay:.5s"/>
+    <circle class="star" cx="1096" cy="68"  r="1.6" style="animation-delay:3.9s"/>
+    <circle class="star" cx="1152" cy="24"  r="1"   style="animation-delay:1.7s"/>
+    <circle class="star" cx="118"  cy="122" r="1"   style="animation-delay:2.4s"/>
+    <circle class="star" cx="612"  cy="116" r="1"   style="animation-delay:4.2s"/>
+    <circle class="star" cx="982"  cy="128" r="1"   style="animation-delay:3.3s"/>
+  </g>
+  <!-- a few brighter sparkles -->
+  <g fill="#f2f7ff" opacity="0.9">
+    <path class="star" d="M196 56 l1.6 4.6 4.6 1.6 -4.6 1.6 -1.6 4.6 -1.6 -4.6 -4.6 -1.6 4.6 -1.6 Z" style="animation-delay:1.2s"/>
+    <path class="star" d="M872 104 l1.3 3.8 3.8 1.3 -3.8 1.3 -1.3 3.8 -1.3 -3.8 -3.8 -1.3 3.8 -1.3 Z" style="animation-delay:3.4s"/>
+    <path class="star" d="M470 150 l1.2 3.4 3.4 1.2 -3.4 1.2 -1.2 3.4 -1.2 -3.4 -3.4 -1.2 3.4 -1.2 Z" style="animation-delay:2.1s"/>
   </g>
 
-  <!-- ─── far cloud layer (slow, dim) ─────────────────────── -->
-  <g opacity="0.16" fill="#8ea6d8">
+  <!-- ─── far cloud layer ─────────────────────────────────── -->
+  <g opacity="0.15" fill="#8ea6d8">
     <g class="drift-3"><use href="#cloudB" transform="translate(60,150) scale(.8)"/></g>
-    <g class="drift-3" style="animation-delay:-30s"><use href="#cloudB" transform="translate(700,128) scale(1.05)"/></g>
-    <g class="drift-3" style="animation-delay:-62s"><use href="#cloudA" transform="translate(980,158) scale(.7)"/></g>
+    <g class="drift-3" style="animation-delay:-32s"><use href="#cloudB" transform="translate(700,120) scale(1.05)"/></g>
+    <g class="drift-3" style="animation-delay:-64s"><use href="#cloudA" transform="translate(980,160) scale(.7)"/></g>
   </g>
 
   <!-- ─── mid cloud layer ─────────────────────────────────── -->
-  <g opacity="0.3" fill="#6f88c4">
-    <g class="drift-2"><use href="#cloudB" transform="translate(120,214) scale(1.15)"/></g>
-    <g class="drift-2" style="animation-delay:-34s"><use href="#cloudA" transform="translate(760,196) scale(.85)"/></g>
+  <!-- kept low: these drift right across the name, so they must never
+       compete with it for legibility -->
+  <g opacity="0.2" fill="#6f88c4">
+    <g class="drift-2"><use href="#cloudB" transform="translate(120,244) scale(1.15)"/></g>
+    <g class="drift-2" style="animation-delay:-36s"><use href="#cloudA" transform="translate(770,268) scale(.85)"/></g>
   </g>
 
   <!-- ─── small companion clouds ──────────────────────────── -->
-  <g fill="#5872ab" opacity="0.72">
-    <g class="bob-s"><use href="#cloudB" transform="translate(28,176) scale(.62)"/></g>
-    <g class="bob-s" style="animation-delay:-3s"><use href="#cloudB" transform="translate(470,124) scale(.5)"/></g>
-    <g class="bob"   style="animation-delay:-5s"><use href="#cloudB" transform="translate(520,244) scale(.72)"/></g>
-    <g class="bob"   style="animation-delay:-2s"><use href="#cloudB" transform="translate(146,138) scale(.4)"/></g>
-    <g class="bob-s" style="animation-delay:-7s"><use href="#cloudB" transform="translate(432,206) scale(.34)"/></g>
+  <g fill="#5872ab" opacity="0.7">
+    <g class="bob-s"><use href="#cloudB" transform="translate(20,196) scale(.62)"/></g>
+    <g class="bob-s" style="animation-delay:-3s"><use href="#cloudB" transform="translate(500,132) scale(.5)"/></g>
+    <g class="bob"   style="animation-delay:-5s"><use href="#cloudB" transform="translate(548,266) scale(.72)"/></g>
+    <g class="bob"   style="animation-delay:-2s"><use href="#cloudB" transform="translate(140,146) scale(.4)"/></g>
+    <g class="bob-s" style="animation-delay:-7s"><use href="#cloudB" transform="translate(452,222) scale(.34)"/></g>
   </g>
 
-  <!-- ─── main cloud + developer ──────────────────────────── -->
+  <!-- ═══ main cloud + developer ══════════════════════════════ -->
   <g class="bob">
-    <!-- soft underglow so the cloud sits in the light -->
-    <ellipse cx="352" cy="326" rx="188" ry="28" fill="#ff9a62" opacity="0.2" filter="url(#soften)"/>
+    <ellipse cx="360" cy="344" rx="205" ry="30" fill="#ff9a62" opacity="0.2" filter="url(#soften)"/>
 
-    <g transform="translate(160,200)">
+    <g transform="translate(140,186) scale(1.15)">
+      <!-- back haze gives the silhouette depth instead of a flat cut-out -->
+      <g fill="#41558c" opacity="0.7" filter="url(#haze)">
+        <circle cx="112" cy="62" r="52"/>
+        <circle cx="214" cy="44" r="50"/>
+        <circle cx="300" cy="70" r="42"/>
+      </g>
+
       <!-- base silhouette -->
       <g fill="#6d86c4">
-        <circle cx="80"  cy="82" r="42"/>
-        <circle cx="156" cy="62" r="54"/>
-        <circle cx="236" cy="72" r="46"/>
-        <circle cx="308" cy="88" r="33"/>
-        <rect x="38" y="80" width="308" height="48" rx="24"/>
+        <circle cx="70"  cy="86" r="40"/>
+        <circle cx="136" cy="64" r="52"/>
+        <circle cx="206" cy="54" r="44"/>
+        <circle cx="272" cy="74" r="40"/>
+        <circle cx="330" cy="90" r="30"/>
+        <rect x="32" y="84" width="320" height="48" rx="24"/>
       </g>
-      <!-- lit puff tops -->
-      <g fill="#a9bde9" opacity="0.8">
-        <circle cx="158" cy="54" r="44"/>
-        <circle cx="238" cy="64" r="35"/>
-        <circle cx="82"  cy="74" r="31"/>
+
+      <!-- lit tops -->
+      <g fill="#a9bde9" opacity="0.82">
+        <circle cx="72"  cy="78" r="30"/>
+        <circle cx="138" cy="54" r="43"/>
+        <circle cx="208" cy="44" r="36"/>
+        <circle cx="272" cy="66" r="31"/>
       </g>
-      <g fill="#c7d6f4" opacity="0.55">
-        <circle cx="160" cy="46" r="30"/>
-        <circle cx="240" cy="58" r="21"/>
+      <g fill="#c7d6f4" opacity="0.6">
+        <circle cx="142" cy="44" r="28"/>
+        <circle cx="210" cy="35" r="22"/>
+        <circle cx="272" cy="58" r="16"/>
       </g>
-      <!-- underside in shade, then the warm dawn rim beneath it -->
-      <rect x="46" y="102" width="292" height="26" rx="13" fill="#54689f"/>
-      <rect x="54" y="114" width="276" height="14" rx="7"  fill="#ff9a62" opacity="0.26"/>
+      <g fill="#e2eaf9" opacity="0.45">
+        <circle cx="146" cy="36" r="15"/>
+        <circle cx="212" cy="28" r="11"/>
+      </g>
+
+      <!-- underside in shade -->
+      <rect x="40" y="106" width="304" height="26" rx="13" fill="#54689f"/>
     </g>
 
-    <!-- seat shadow -->
-    <ellipse cx="316" cy="214" rx="46" ry="10" fill="#31406e" opacity="0.5"/>
+    <!-- coffee, because the sun isn't up yet -->
+    <g transform="translate(214,206) scale(1.15)">
+      <g class="steam" stroke="#cbd9f5" stroke-width="1.7" fill="none" stroke-linecap="round" opacity="0.5">
+        <path d="M7 1 c-3.4 -4.6 3.4 -6.6 0 -11.4"/>
+      </g>
+      <g class="steam" style="animation-delay:-1.8s" stroke="#cbd9f5" stroke-width="1.7" fill="none" stroke-linecap="round" opacity="0.5">
+        <path d="M14 2 c-3.4 -4.6 3.4 -6.6 0 -11"/>
+      </g>
+      <path d="M19.5 9 a5.2 5.2 0 0 1 0 9.4" stroke="#e6ecf8" stroke-width="2.6" fill="none"/>
+      <path d="M3 6 h16 v12.5 a8 8 0 0 1 -16 0 Z" fill="#eef3fa"/>
+      <ellipse cx="11" cy="6.4" rx="8" ry="2.5" fill="#7b4a2f"/>
+    </g>
 
-    <!-- developer -->
-    <g transform="translate(235,61) scale(1.3)">
+    <ellipse cx="312" cy="208" rx="50" ry="11" fill="#31406e" opacity="0.5"/>
+
+    <!-- ─── developer ──────────────────────────────────────── -->
+    <g transform="translate(222,47) scale(1.35)">
       <!-- far leg -->
       <g fill="#27314f">
         <rect x="50" y="100" width="58" height="20" rx="10" transform="rotate(-6 50 110)"/>
@@ -150,13 +208,15 @@
         <ellipse cx="112" cy="156" rx="13" ry="7" fill="#161d33"/>
       </g>
 
-      <!-- neck -->
       <rect x="79" y="50" width="13" height="12" rx="5" fill="#d9a87f"/>
 
-      <!-- hoodie torso -->
+      <!-- hoodie -->
       <path d="M50 120 C44 96 46 72 58 62 C66 55 80 53 88 59 C96 67 97 93 95 114 C95 122 84 126 70 126 C58 126 52 125 50 120 Z" fill="#8b7ad6"/>
-      <!-- hood behind neck -->
-      <path d="M60 64 C64 54 80 50 90 56 C84 66 70 70 60 64 Z" fill="#7263bd"/>
+      <path d="M58 66 C63 54 81 49 91 56 C85 67 69 72 58 66 Z" fill="#6f60b8"/>
+      <path d="M74 62 C76 70 76 76 75 82" stroke="#c9c0ee" stroke-width="1.8" fill="none" stroke-linecap="round" opacity="0.75"/>
+      <path d="M82 63 C84 71 84 77 83 83" stroke="#c9c0ee" stroke-width="1.8" fill="none" stroke-linecap="round" opacity="0.75"/>
+      <circle cx="75" cy="84" r="1.6" fill="#c9c0ee" opacity="0.8"/>
+      <circle cx="83" cy="85" r="1.6" fill="#c9c0ee" opacity="0.8"/>
 
       <!-- near leg -->
       <g fill="#2f3a5c">
@@ -165,54 +225,74 @@
         <ellipse cx="124" cy="160" rx="14" ry="7" fill="#1a2138"/>
       </g>
 
-      <!-- head: hair mass sits behind, offset up-and-back so it reads as a profile -->
-      <circle cx="84" cy="33" r="20" fill="#1d1726"/>
+      <!-- head -->
+      <circle cx="83" cy="31" r="21" fill="#1d1726"/>
       <circle cx="89" cy="40" r="17" fill="#f0c09a"/>
-      <path d="M73 33 C78 20 95 17 104 26 C95 24 84 26 78 36 Z" fill="#1d1726"/>
+      <path d="M73 31 C79 16 99 15 106 27 C97 20 84 23 78 35 Z" fill="#1d1726"/>
       <circle cx="99" cy="42" r="1.8" fill="#2b2233"/>
       <path d="M105 44 q3.2 2 0 4" stroke="#d9a87f" stroke-width="1.4" fill="none" stroke-linecap="round"/>
+      <path d="M96 51 q4 2.4 7 -0.6" stroke="#c0855c" stroke-width="1.3" fill="none" stroke-linecap="round" opacity="0.8"/>
 
-      <!-- screen glow, behind the laptop, lighting the face -->
-      <ellipse class="glow" cx="107" cy="74" rx="38" ry="32" fill="url(#screenGlow)"/>
+      <!-- headphones -->
+      <path d="M80 38 C75 13 99 9 103 27" stroke="#2b3a63" stroke-width="6" fill="none" stroke-linecap="round"/>
+      <path d="M80 38 C76 16 96 12 101 25" stroke="#4a5f9e" stroke-width="2" fill="none" stroke-linecap="round" opacity="0.75"/>
+      <rect x="73" y="34" width="15" height="21" rx="7.5" fill="#33477f"/>
+      <rect x="75.5" y="37" width="10" height="15" rx="5" fill="#5c74ac"/>
 
-      <!-- arm reaching to the keys -->
-      <path d="M84 68 C78 82 78 95 90 101 L102 104" stroke="#8b7ad6" stroke-width="13" stroke-linecap="round" fill="none"/>
+      <!-- light thrown by the screen; the rim hugs the face arc (r17 about
+           89,40) — pushed any wider it detaches and reads as a stray wire -->
+      <path d="M119 62 L129 100 L84 120 L72 44 Z" fill="url(#cone)" filter="url(#coneBlur)"/>
+      <path d="M100 26 C106 32 106 48 100 54" stroke="#ffd68a" stroke-width="2.2" fill="none" opacity="0.45" stroke-linecap="round"/>
+
+      <ellipse class="glow" cx="108" cy="76" rx="40" ry="34" fill="url(#screenGlow)"/>
+
+      <!-- arm: one silhouette, with a shaded seam where it meets the torso.
+           An inner highlight stroke here reads as a false edge. -->
+      <path d="M85 67 C79 81 79 95 90 101 L102 104" stroke="#8b7ad6" stroke-width="13" stroke-linecap="round" fill="none"/>
+      <path d="M85 68 C82 74 80 79 79 85" stroke="#7263bd" stroke-width="2.4" fill="none" stroke-linecap="round" opacity="0.55"/>
       <circle cx="104" cy="104" r="6" fill="#f0c09a"/>
 
       <!-- laptop -->
-      <path d="M74 108 L128 100 L134 108 L80 116 Z" fill="#c9d3e6"/>
-      <path d="M74 108 L128 100 L128 103 L74 111 Z" fill="#9fadc7"/>
+      <path d="M82 107 L128 100 L134 108 L88 115 Z" fill="#c9d3e6"/>
+      <path d="M82 107 L128 100 L128 103 L82 110 Z" fill="#9fadc7"/>
       <path d="M127 100 L117 63 L126 61 L136 98 Z" fill="#b9c4da"/>
       <path d="M127 100 L117 63 L120 62.4 L130 99.5 Z" fill="#fbbf24" filter="url(#glowSm)" opacity="0.95"/>
       <circle cx="126" cy="82" r="2.4" fill="#8996b0"/>
+
+      <!-- motes drifting in the light -->
+      <g fill="#ffe0a3">
+        <circle class="mote" cx="112" cy="52" r="1.3" style="animation-delay:0s"/>
+        <circle class="mote" cx="100" cy="34" r="1"   style="animation-delay:-1.6s"/>
+        <circle class="mote" cx="120" cy="40" r="1.1" style="animation-delay:-3.2s"/>
+        <circle class="mote" cx="94"  cy="22" r="0.9" style="animation-delay:-2.4s"/>
+      </g>
     </g>
 
-    <!-- front puff: the feet tuck into it so the figure sits *in* the cloud, not on a shelf -->
-    <g transform="translate(160,200)">
-      <circle cx="72"  cy="106" r="26" fill="#6480bd"/>
-      <circle cx="124" cy="100" r="33" fill="#6b83c0"/>
-      <circle cx="186" cy="106" r="28" fill="#647cb8"/>
-      <circle cx="246" cy="110" r="23" fill="#5d74ae"/>
-      <rect x="52" y="106" width="268" height="26" rx="13" fill="#5c74ac"/>
+    <!-- front puffs: the figure sits *in* the cloud, not on a shelf -->
+    <g transform="translate(140,186) scale(1.15)">
+      <circle cx="62"  cy="108" r="27" fill="#6480bd"/>
+      <circle cx="118" cy="102" r="34" fill="#6b83c0"/>
+      <circle cx="184" cy="108" r="29" fill="#647cb8"/>
+      <circle cx="248" cy="112" r="24" fill="#5d74ae"/>
+      <rect x="44" y="108" width="278" height="27" rx="13.5" fill="#5c74ac"/>
     </g>
   </g>
 
-  <!-- ─── foreground drifting wisps ───────────────────────── -->
-  <g opacity="0.22" fill="#a9bce8">
-    <g class="drift-1"><use href="#cloudB" transform="translate(0,286) scale(.55)"/></g>
-    <g class="drift-1" style="animation-delay:-24s"><use href="#cloudB" transform="translate(600,300) scale(.4)"/></g>
+  <!-- ─── foreground wisps ────────────────────────────────── -->
+  <g opacity="0.2" fill="#a9bce8">
+    <g class="drift-1"><use href="#cloudB" transform="translate(0,304) scale(.55)"/></g>
+    <g class="drift-1" style="animation-delay:-26s"><use href="#cloudB" transform="translate(600,320) scale(.4)"/></g>
   </g>
 
   <!-- ─── identity block ──────────────────────────────────── -->
   <g font-family="ui-monospace, SFMono-Regular, 'JetBrains Mono', Menlo, Consolas, 'DejaVu Sans Mono', monospace">
-    <text x="600" y="122" fill="#7f8fb3" font-size="14" letter-spacing="2">$ whoami</text>
-    <text x="600" y="172" fill="#eef3fb" font-size="44" font-weight="700" letter-spacing="1.5">Aadityasinh Zala</text>
-    <text x="600" y="204" fill="#5ec8f5" font-size="16.5" letter-spacing="2.6">DevOps  ·  Cloud Infrastructure  ·  SRE</text>
+    <text x="640" y="128" fill="#7f8fb3" font-size="14" letter-spacing="2">$ whoami</text>
+    <text x="640" y="182" fill="#eef3fb" font-size="46" font-weight="700" letter-spacing="1.5">Aadityasinh Zala</text>
+    <text x="640" y="216" fill="#5ec8f5" font-size="16.5" letter-spacing="2.6">DevOps  ·  Cloud Infrastructure  ·  SRE</text>
 
-    <line x1="600" y1="230" x2="1104" y2="230" stroke="#31406b" stroke-width="1"/>
+    <line x1="640" y1="244" x2="1144" y2="244" stroke="#31406b" stroke-width="1"/>
 
-    <!-- delivery pipeline -->
-    <g transform="translate(600,248)">
+    <g transform="translate(640,262)">
       <g stroke="#3e5185" stroke-width="1.4" stroke-dasharray="3 4">
         <line x1="62"  y1="14" x2="88"  y2="14"/>
         <line x1="150" y1="14" x2="176" y2="14"/>
@@ -223,12 +303,12 @@
         <line x1="0" y1="14" x2="440" y2="14"/>
       </g>
       <g font-size="10.5" letter-spacing="1.2" text-anchor="middle">
-        <g fill="#0f1729">
-          <rect x="0"   y="2" width="62" height="24" rx="12" fill="#16203a" stroke="#3e5185"/>
-          <rect x="88"  y="2" width="62" height="24" rx="12" fill="#16203a" stroke="#3e5185"/>
-          <rect x="176" y="2" width="62" height="24" rx="12" fill="#16203a" stroke="#3e5185"/>
-          <rect x="264" y="2" width="62" height="24" rx="12" fill="#16203a" stroke="#3e5185"/>
-          <rect x="352" y="2" width="88" height="24" rx="12" fill="#16203a" stroke="#3e5185"/>
+        <g fill="#16203a" stroke="#3e5185">
+          <rect x="0"   y="2" width="62" height="24" rx="12"/>
+          <rect x="88"  y="2" width="62" height="24" rx="12"/>
+          <rect x="176" y="2" width="62" height="24" rx="12"/>
+          <rect x="264" y="2" width="62" height="24" rx="12"/>
+          <rect x="352" y="2" width="88" height="24" rx="12"/>
         </g>
         <g fill="#9db0d4">
           <text x="31"  y="18">push</text>

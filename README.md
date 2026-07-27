@@ -45,17 +45,6 @@ resource "human" "aadityasinh_zala" {
 <summary>⚙️ <strong>DevOps Highlights</strong> (click to expand)</summary>
 <br>
 
-```mermaid
-flowchart LR
-  DEV["git push"] --> CI["Jenkins<br/>build · test"]
-  CI --> IMG["Docker<br/>multi-stage image"]
-  IMG --> REG[("Registry")]
-  REG --> K8S["AWS EKS<br/>rolling update"]
-  TF["Terraform<br/>VPC · subnets · EKS"] -. provisions .-> K8S
-  ANS["Ansible<br/>bootstrap + config"] -. configures .-> K8S
-  K8S --> OBS["Prometheus · Loki<br/>Grafana · OpenTelemetry"]
-```
-
 | Layer | Tool / Tech | Details |
 |-------|------------|----------|
 | 🐳 **Containerization** | Docker, Docker Compose | Multi-stage Dockerfiles for frontend & backend with docker compose, optimized image sizes & enhanced security |
