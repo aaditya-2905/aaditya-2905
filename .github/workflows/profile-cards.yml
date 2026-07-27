@@ -1,0 +1,53 @@
+name: profile cards
+
+# Re-renders the stat cards into assets/ and commits them, so the README only
+# ever points at files that live in this repo. If a run fails, the previously
+# committed SVGs stay in place and the profile still renders.
+
+on:
+  schedule:
+    - cron: '17 4 * * *' # daily, 04:17 UTC
+  workflow_dispatch:
+  push:
+    branches: [main]
+    paths:
+      - '.github/scripts/generate-cards.mjs'
+      - '.github/workflows/profile-cards.yml'
+
+permissions:
+  contents: write
+
+concurrency:
+  group: profile-cards
+  cancel-in-progress: false
+
+jobs:
+  render:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+
+      - name: Render cards
+        env:
+          # The built-in token covers public stats. To include private
+          # contribution counts, add a PAT with `read:user` as METRICS_TOKEN
+          # and enable "Include private contributions" on your profile.
+          GH_TOKEN: ${{ secrets.METRICS_TOKEN || secrets.GITHUB_TOKEN }}
+          GH_LOGIN: ${{ github.repository_owner }}
+        run: node .github/scripts/generate-cards.mjs
+
+      - name: Commit refreshed cards
+        run: |
+          if [ -z "$(git status --porcelain -- assets)" ]; then
+            echo 'cards unchanged; nothing to commit'
+            exit 0
+          fi
+          git config user.name 'github-actions[bot]'
+          git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
+          git add assets
+          git commit -m 'chore: refresh profile cards'
+          git push
