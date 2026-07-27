@@ -82,8 +82,6 @@ resource "human" "aadityasinh_zala" {
   <img src="assets/card-languages.svg" alt="Most used languages by share of bytes written" width="49%" />
 </p>
 
-<img src="assets/card-activity.svg" alt="Contribution activity heatmap for the last year, with current and longest streak" width="100%" />
-
 ---
 
 ## 🌐 Connect With Me
