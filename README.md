@@ -1,11 +1,11 @@
-<img src="assets/hero.svg" alt="Aadityasinh Zala — DevOps, Cloud Infrastructure and SRE" width="100%" />
+<img src="assets/hero.svg" alt="Aadityasinh Zala — DevOps, Cloud and SRE" width="100%" />
 
 ## 🧑‍💻 About Me
 
 ```hcl
 resource "human" "aadityasinh_zala" {
   role  = "DevOps Engineer"
-  focus = ["cloud infrastructure", "CI/CD", "automation"]
+  focus = ["cloud infra", "CI/CD", "automation"]
 
   stack = {
     cloud         = ["AWS"]
@@ -83,8 +83,6 @@ resource "human" "aadityasinh_zala" {
 </p>
 
 <img src="assets/card-activity.svg" alt="Contribution activity heatmap for the last year, with current and longest streak" width="100%" />
-
-<sub>These cards are rendered by [a GitHub Action](.github/workflows/profile-cards.yml) on a daily schedule and committed to [`assets/`](assets/) — so they load from this repo rather than a third-party image service that can cold-start and time out behind GitHub's image proxy.</sub>
 
 ---
 
