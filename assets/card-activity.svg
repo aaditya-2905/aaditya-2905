@@ -376,6 +376,7 @@
   <rect x="726" y="144" width="11" height="11" rx="2.5" fill="#184f95"/>
   <rect x="726" y="158" width="11" height="11" rx="2.5" fill="#1b2540"/>
   <rect x="740" y="74" width="11" height="11" rx="2.5" fill="#1b2540"/>
+  <rect x="740" y="88" width="11" height="11" rx="2.5" fill="#1b2540"/>
   <rect x="26" y="182" width="11" height="11" rx="2.5" fill="#1b2540"/>
   <text x="44" y="191" font-family="ui-monospace, SFMono-Regular, 'JetBrains Mono', Menlo, Consolas, 'DejaVu Sans Mono', monospace" font-size="9.5" fill="#6b7ea6">less</text>
   <rect x="70" y="182" width="11" height="11" rx="2.5" fill="#184f95"/>
